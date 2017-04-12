@@ -6,13 +6,14 @@ const initialState = {
 
 export default function AppReducer (state, action) {
   if (state === undefined) {
-    return {};
+    return initialState;
   }
 
   switch (action.type) {
     case "START":
     return Object.assign({}, state, {
-        startClick: !state.startClick
+        startClick: !state.startClick,
+        name: action.name
       });
 
     default:
