@@ -11,9 +11,21 @@
     display: block;
     margin: 3rem auto;
     font-size: 2rem;
+    box-shadow: 5px 5px $color-darkblue-bg;
+    padding: .5rem;
+
+
 
   }
   input {
     // font-size: 2rem;
+  }
+  button {
+  }
+  button:hover {
+    // padding: inherit;
+    border: none;
+    color: white;
+    background: $color-darkblue-bg;
   }
 }

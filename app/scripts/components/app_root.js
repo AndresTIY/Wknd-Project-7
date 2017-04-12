@@ -6,10 +6,30 @@ import StartView from './start_view.js'
 
 const AppRoot = React.createClass({
   render: function () {
+
+    let hideClass = "hide-content"
+    let showClass = "show-content"
+    if (this.props.startClick){
+      hideClass = "show-content"
+      showClass = "hide-content"
+    }
+
+
+
+
     return (
       <section>
-        <StartView />
+
+        <div className={showClass}>
+          <StartView />
+        </div>
+
+        <div className={hideClass}>
+          <MainView />
+        </div>
+
       </section>
+
     );
   }
 });

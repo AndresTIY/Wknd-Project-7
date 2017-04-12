@@ -1,13 +1,25 @@
 import React from 'react'
+import store from '../store.js'
 const StartView = React.createClass({
+
+  buttonClick: function(){
+    store.dispatch({type:"START", name: this.refs.name.value})
+
+  },
+
+
+
   render: function(){
     return (
     <div className="start-card">
       <input
+      ref="name"
       placeholder="what is your name?"
       type="text">
       </input>
-      <button>Click to Submit Your Name</button>
+      <button
+      onClick={this.buttonClick}>Click to Submit Your Name
+      </button>
     </div>)
   }
 

@@ -31,8 +31,12 @@ Plan it!
 
 
 -----Working Through-------
-- [ ] Comp: Start Page to Add Name
+- [X] Comp: Start Page to Add Name
   - [ ] Button to progress to Game Screen/Board
+  - [ ] Name should be saved to the GLOBAL state
+
+- [ ] Reducer Needs to be created for State
+
 
 - [ ] Comp: When Answer is Clicked, Modal Pops Up with answer and 2 Buttons
 
