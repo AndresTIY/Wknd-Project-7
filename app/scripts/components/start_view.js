@@ -4,14 +4,7 @@ import store from '../store.js'
 const StartView = React.createClass({
 
   buttonClick: function(){
-
     store.dispatch(categories(this.refs.name.value))
-    // store.dispatch({
-    //   type:"START", 
-    //   name: this.refs.name.value,
-    //   data:
-    // })
-
   },
 
 

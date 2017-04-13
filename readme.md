@@ -36,7 +36,8 @@ Plan it!
   - [X] Name should be saved to the GLOBAL state
 
 - [X] Reducer Needs to be created for State
-- [ ] Set up API
+- [X] Set up API
+- [ ] Populate Correct API Data
 
 
 - [ ] Comp: When Answer is Clicked, Modal Pops Up with answer and 2 Buttons
@@ -50,14 +51,5 @@ Plan it!
   - [ ] Pass Button
     - [ ] Removes that Answer Card from that Category
 
-- [ ] Comp: Name Card, takes input from Start Page
+- [X] Comp: Name Card, takes input from Start Page
 - [ ] Comp: Points Card, adds Points and show's Total Point Value
-
---------CSS-------------
-- [ ] Main Title and Dollars are yellow
-- [ ] All text have a text-shadow
-- [ ] Serif (ugh)
-- [ ] Black borders around each block/card
-- [ ]
-- [ ]
-- [ ]

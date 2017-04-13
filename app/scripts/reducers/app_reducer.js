@@ -1,9 +1,9 @@
-import categories from '../actions/load_categories'
 const initialState = {
   startClick: false,
   name: '',
   points: '',
-  data: null
+  data: null,
+  ids: null
 }
 
 export default function AppReducer (state, action) {

@@ -1,10 +1,15 @@
 import React from 'react'
-import categories from '../actions/load_categories'
+import { connect } from 'react-redux'
+import container from '../containers/all.js'
+
+
 
 
 
 
 const CatView = React.createClass({
+
+
 
   render: function(){
     return (
@@ -24,4 +29,4 @@ const CatView = React.createClass({
 
 
 })
-export default CatView;
+export default connect(container.allState)(CatView);
