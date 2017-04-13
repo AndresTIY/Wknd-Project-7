@@ -1,7 +1,9 @@
+import categories from '../actions/load_categories'
 const initialState = {
   startClick: false,
   name: '',
-  points: ''
+  points: '',
+  data: null
 }
 
 export default function AppReducer (state, action) {
@@ -15,6 +17,11 @@ export default function AppReducer (state, action) {
         startClick: !state.startClick,
         name: action.name
       });
+
+    case "LOAD_DATA":
+    return Object.assign({}, state, {
+      data: action.data
+    })
 
     default:
       return state
