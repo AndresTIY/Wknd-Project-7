@@ -2,7 +2,7 @@ const initialState = {
   startClick: false,
   name: '',
   points: '',
-  data: null,
+  data: [],
   ids: null
 }
 
@@ -13,15 +13,17 @@ export default function AppReducer (state, action) {
 
   switch (action.type) {
     case "START":
-    return Object.assign({}, state, {
-        startClick: !state.startClick,
-        name: action.name
-      });
+      return Object.assign({}, state, {
+          startClick: !state.startClick,
+          name: action.name
+        });
 
     case "LOAD_DATA":
-    return Object.assign({}, state, {
-      data: action.data
-    })
+      let currentData = state.data
+      currentData.push(action.data)
+      return Object.assign({}, state, {
+        data: currentData
+      })
 
     default:
       return state

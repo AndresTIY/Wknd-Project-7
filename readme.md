@@ -40,7 +40,7 @@ Plan it!
 - [ ] Populate Correct API Data
 
 
-- [ ] Comp: When Answer is Clicked, Modal Pops Up with answer and 2 Buttons
+- [ ] Comp: When $ Value is Clicked, Modal Pops Up with answer and 2 Buttons
 
   - [ ] Answer Button
     - [ ] Creates Input and Submit Button

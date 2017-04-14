@@ -4,6 +4,7 @@ import container from '../containers/all.js'
 
 
 export default function categories(name){
+
   return (dispatch) => {
     dispatch({type:"START", name: name })
     return $.getJSON(
@@ -14,7 +15,6 @@ export default function categories(name){
           api.url + '/category/?id=' + current.id
         ).then((data)=>{
           dispatch({type:"LOAD_DATA", data: data})
-
         })
       })
 
