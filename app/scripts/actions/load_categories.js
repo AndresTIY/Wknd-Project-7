@@ -11,8 +11,8 @@ export default function categories(name){
       api.url + '/categories/?count=6'
     ).then((data, success, xhr) =>{
       console.log("Starting Second AJAX")
-      let ids = data.map((current, i, arr) => {
-        return $.getJSON(
+      data.forEach((current, i, arr) => {
+        $.getJSON(
           api.url + '/category/?id=' + current.id
         ).then((data) => {
           console.log("Dispatching load data")

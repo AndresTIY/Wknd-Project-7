@@ -11,10 +11,10 @@ const CatView = React.createClass({
             return (
               <div className="cat" key={index}>
                 <h3>{datum.title}</h3>
+                <ValuesView />
               </div>
             )
           })}
-          <ValuesView />
         </div>
     )
   }
