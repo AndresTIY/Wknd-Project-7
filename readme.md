@@ -37,7 +37,14 @@ Plan it!
 
 - [X] Reducer Needs to be created for State
 - [X] Set up API
-- [ ] Populate Correct API Data
+- [ ] Populate Correct API Data in their Components
+  - [ ] Categories, h3, get's _Title_
+  - [ ] Each Block/LI item get's a _Value_
+  - [ ] Clicking LI item brings up a MODAL
+    - [ ] _Question_ appears, with an input
+    - [ ] input needs to be compared to _answer_
+    - [ ]
+
 
 
 - [ ] Comp: When $ Value is Clicked, Modal Pops Up with answer and 2 Buttons

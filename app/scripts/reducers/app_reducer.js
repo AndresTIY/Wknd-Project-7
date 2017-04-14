@@ -19,13 +19,19 @@ export default function AppReducer (state, action) {
         });
 
     case "LOAD_DATA":
-      let currentData = state.data
-      currentData.push(action.data)
+      // let currentData = state.data
+      // currentData.push(action.data)
+      // console.log("Load-data");
+
+      var newData = state.data.slice();
+      newData.push(action.data);
+
       return Object.assign({}, state, {
-        data: currentData
+        data: newData
       })
 
     default:
+      console.debug("Unhandled State");
       return state
 
   }
