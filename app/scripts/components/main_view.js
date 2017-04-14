@@ -9,11 +9,6 @@ const MainView = React.createClass({
         <HeaderView />
         <div className="categories-card">
           <CatView />
-          <CatView />
-          <CatView />
-          <CatView />
-          <CatView />
-          <CatView />
         </div>
       </div>
     )
