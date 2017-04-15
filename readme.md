@@ -43,9 +43,10 @@ Plan it!
 
 ----------Get Done on Saturday----------
 
-  - [X] Clicking LI item brings up a MODAL
-    - [ ] _Question_ appears, with an input
-    - [ ] input needs to be compared to _answer_
+- [X] Clicking LI item brings up a MODAL
+  - [ ] _Question_ appears, with an input
+  - [ ] input needs to be compared to _answer_
+-[ ] map out each category, so then i only have questions, answers, etc
 
 
 

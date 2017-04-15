@@ -8,10 +8,10 @@ import store from '../store.js'
 const CatView = React.createClass({
 
 
-  modalPopUp: function(e, category){
-    console.log(e.target, category);
-    store.dispatch({type:"MODAL"})
-  },
+  // modalPopUp: function(e, category){
+  //   console.log(e.target, category);
+  //   store.dispatch({type:"MODAL"})
+  // },
   //how do we get this function to grab the current category?
   //also want current value
   //dom traversal?
@@ -32,16 +32,10 @@ const CatView = React.createClass({
         <div>
           {this.props.data.map((datum, index) => {
             return (
-              <div id="catt" className="cat" key={index}>
+              <div className="cat" key={index}>
                 <h3>{datum.title}</h3>
-                <div onClick={this.modalPopUp}>
-                  <ValuesView datum={datum} />
-                </div>
-                <div className={hideClass}>
-                  <ModalView
-                  category = {datum.title}
-                  datum = {datum}/>
-                </div>
+                  <ValuesView
+                  datum={datum} />
               </div>
             )
           })}
