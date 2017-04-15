@@ -38,8 +38,9 @@ Plan it!
 - [X] Reducer Needs to be created for State
 - [X] Set up API
 - [ ] Populate Correct API Data in their Components
-  - [ ] Categories, h3, get's _Title_
-  - [ ] Each Block/LI item get's a _Value_
+  - [X] Categories, h3, get's _Title_
+  - [X] Each Block/LI item get's a _Value_
+----------Saturday Plans----------
   - [ ] Clicking LI item brings up a MODAL
     - [ ] _Question_ appears, with an input
     - [ ] input needs to be compared to _answer_

@@ -6,42 +6,18 @@ import container from '../containers/all.js'
 const ValuesView = React.createClass({
 
 
-  cluesMap: function(){
-
-
-    // let clues = this.props.data.map((data)=>{
-    //   return data.clues
-    // })
-
-    var valArr = this.props.data.map((data)=>{
-      var val = data.clues.map((datum) => {
-        return datum.value
-      })
-      return val
-    })
-
-    return valArr
-  },
-
 
   render: function(){
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+    console.log(this.props);
     return (<div>
-            {this.props.data.map((data, index) => {
-            return (<ul className="list">
-
-              {data.clues.map((datum, i) => {
-                return <li>{datum.value}</li>
-              })}
-
-            </ul>)
-
-            }
-          )}
+      <ul className="list">
+        {this.props.datum.clues.slice(0,5).map((datum, i) => {
+          if (datum.value === null){
+            return <li key={i}>600</li>
+          }
+          return <li key={i}>{datum.value}</li>
+        })}
+      </ul>
         </div>
     )
   }

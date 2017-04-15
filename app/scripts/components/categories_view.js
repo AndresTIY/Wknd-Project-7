@@ -2,8 +2,13 @@ import React from 'react'
 import { connect } from 'react-redux'
 import container from '../containers/all.js'
 import ValuesView from './values_view.js'
+import ModalView from './modal_view.js'
 
 const CatView = React.createClass({
+
+  clickTest: function(e){
+    console.log(e.target);
+  },
   render: function(){
     return (
         <div>
@@ -11,7 +16,9 @@ const CatView = React.createClass({
             return (
               <div className="cat" key={index}>
                 <h3>{datum.title}</h3>
-                <ValuesView />
+                <div onClick={this.clickTest}>
+                  <ValuesView datum={datum} />
+                </div>
               </div>
             )
           })}
