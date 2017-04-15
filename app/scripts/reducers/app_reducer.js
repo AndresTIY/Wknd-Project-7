@@ -31,6 +31,15 @@ export default function AppReducer (state, action) {
         modal: !state.modal
       })
 
+    case "CURRENT_QUESTION":
+      return Object.assign({}, state, {
+        question: action.question,
+        answer: action.answer,
+        value: action.value
+      })
+      //CURRENT_QUESTION isn't doing anything, should assign
+      // question, answer, value during MODAL case instead
+
     default:
       console.debug("Unhandled State");
       return state

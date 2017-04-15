@@ -7,17 +7,10 @@ import container from '../containers/all.js'
 
 const MainView = React.createClass({
 
-  modalPopUp: function(e){
-    store.dispatch({type:"MODAL"})
-  },
+
 
   render: function(){
-    let showClass = "show-content"
-    let hideClass = "hide-content"
-    if (this.props.modal){
-      showClass = "hide-content"
-      hideClass = "show-content"
-    }
+
 
     return (
       <div className="main-card">
@@ -25,9 +18,7 @@ const MainView = React.createClass({
         <div className="categories-card">
           <CatView />
         </div>
-        <div className={hideClass}>
-          <ModalView />
-        </div>
+
       </div>
     )
   }

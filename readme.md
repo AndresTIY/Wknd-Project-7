@@ -40,13 +40,16 @@ Plan it!
 - [ ] Populate Correct API Data in their Components
   - [X] Categories, h3, get's _Title_
   - [X] Each Block/LI item get's a _Value_
-----------Saturday Plans----------
-  - [ ] Clicking LI item brings up a MODAL
+
+----------Get Done on Saturday----------
+
+  - [X] Clicking LI item brings up a MODAL
     - [ ] _Question_ appears, with an input
     - [ ] input needs to be compared to _answer_
-    - [ ]
 
 
+
+-----------------------------------------------
 
 - [ ] Comp: When $ Value is Clicked, Modal Pops Up with answer and 2 Buttons
 
