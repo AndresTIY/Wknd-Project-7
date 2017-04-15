@@ -3,7 +3,8 @@ const initialState = {
   name: '',
   points: '',
   data: [],
-  ids: null
+  modal: false
+
 }
 
 export default function AppReducer (state, action) {
@@ -23,6 +24,11 @@ export default function AppReducer (state, action) {
       newData.push(action.data);
       return Object.assign({}, state, {
         data: newData
+      });
+
+    case "MODAL":
+      return Object.assign({}, state, {
+        modal: !state.modal
       })
 
     default:

@@ -3,11 +3,13 @@ import { connect } from 'react-redux'
 import container from '../containers/all.js'
 import ValuesView from './values_view.js'
 import ModalView from './modal_view.js'
+import store from '../store.js'
 
 const CatView = React.createClass({
 
   clickTest: function(e){
     console.log(e.target);
+    store.dispatch({type:"MODAL"})
   },
   render: function(){
     return (

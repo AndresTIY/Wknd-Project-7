@@ -8,14 +8,13 @@ const ValuesView = React.createClass({
 
 
   render: function(){
-    console.log(this.props);
     return (<div>
       <ul className="list">
         {this.props.datum.clues.slice(0,5).map((datum, i) => {
           if (datum.value === null){
-            return <li key={i}>600</li>
+            return <li key={i}>$600</li>
           }
-          return <li key={i}>{datum.value}</li>
+          return <li key={i}>${datum.value}</li>
         })}
       </ul>
         </div>
