@@ -18,20 +18,10 @@ Plan it!
 - how will I get it(hint: actions and the store)
 - polish
 
-### Checkboxes
 
-------PLAN-------
-- [ ] Figure out Components/Views needed
+-----------Working Through------------
 
-- [ ] Figure out what each Component will do
-
-- [ ] Figure out if any special methods are needed on these Components
-  - [ ]Clicking activates Modal
-
-
-
------Working Through-------
-- [X] Comp: Start Page to Add Name
+- [X] Component: Start Page to Add Name
   - [X] Button to progress to Game Screen/Board
   - [X] Name should be saved to the GLOBAL state
 
@@ -41,30 +31,16 @@ Plan it!
   - [X] Categories, h3, get's _Title_
   - [X] Each Block/LI item get's a _Value_
 
-----------Get Done on Saturday----------
+  - [X] Clicking LI item brings up a MODAL
+    - [ ] _Question_ appears, with an input
+    - [ ] input needs to be compared to _answer_
+- [ ] Component: When $ Value is Clicked, Modal Pops Up with _Question_ , 2 buttons, and an input field
 
-- [X] Clicking LI item brings up a MODAL
-  - [ ] _Question_ appears, with an input
-  - [ ] input needs to be compared to _answer_
--[ ] map out each category, so then i only have questions, answers, etc
+  - [X] Input and Submit Button
+    - [ ] Correct Answer adds points
+    - [ ] Wrong Answer displays a Wrong Answer Alert
+- [ ] Pass Button
+  - [ ] Removes that Answer Card from that Category
 
-
-
------------------------------------------------
-
-- [ ] Comp: When $ Value is Clicked, Modal Pops Up with answer and 2 Buttons
-
-  - [ ] Answer Button
-    - [ ] Creates Input and Submit Button
-      - [ ] Correct Answer adds points
-      - [ ] Wrong Answer ....
-
-
-  - [ ] Pass Button
-    - [ ] Removes that Answer Card from that Category
-
-- [X] Comp: Name Card, takes input from Start Page
+- [X] Comp: Name Header Card, takes input from Start Page
 - [ ] Comp: Points Card, adds Points and show's Total Point Value
-
-
-Every Modal is popping up!
