@@ -67,4 +67,4 @@ Plan it!
 - [ ] Comp: Points Card, adds Points and show's Total Point Value
 
 
-Each Modal View has it's own questions, answers, and category. Yet when the onclick event happens, only the final modal pops up.
+Every Modal is popping up!

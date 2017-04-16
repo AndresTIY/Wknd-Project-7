@@ -14,20 +14,14 @@ const AppRoot = React.createClass({
       showClass = "hide-content"
     }
 
-
-
-
     return (
       <section>
-
         <div className={showClass}>
           <StartView />
         </div>
-
         <div className={hideClass}>
           <MainView />
         </div>
-
       </section>
 
     );

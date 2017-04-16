@@ -8,8 +8,8 @@ import CategoriesView from './categories_view.js'
 
 
 const ValuesView = React.createClass({
-  modalPopUp: function(){
-    store.dispatch({type:"MODAL_TOGGLE"})
+  modalPopUp: function(value){
+    store.dispatch({type:"MODAL_TOGGLE", category: value})
   },
   render: function(){
     let showClass = "show-content"
@@ -41,7 +41,9 @@ const ValuesView = React.createClass({
                       answer = {data.answer}
                       value ={data.value}/>
                     </div>
-                    <li onClick={this.modalPopUp} key={i}>${data.value}</li>
+                    <li
+                    category = {this.props.category}
+                    onClick={this.modalPopUp} key={i}>${data.value}</li>
                   </div>
         })}
       </ul>

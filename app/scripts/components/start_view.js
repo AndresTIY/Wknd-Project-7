@@ -6,9 +6,6 @@ const StartView = React.createClass({
   buttonClick: function(){
     store.dispatch(categories(this.refs.name.value))
   },
-
-
-
   render: function(){
     return (
     <div className="start-card">

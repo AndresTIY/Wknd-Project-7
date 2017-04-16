@@ -3,12 +3,9 @@ import { connect } from 'react-redux'
 import container from '../containers/all.js'
 
 const HeaderView = React.createClass({
-
-
   grabName: function(){
     return this.props.name
   },
-
   render: function(){
     return(
       <header>
@@ -16,8 +13,5 @@ const HeaderView = React.createClass({
       </header>
     )
   }
-
-
 })
-// export default HeaderView;
 export default connect(container.allState)(HeaderView)

@@ -3,7 +3,6 @@ import allState from '../containers/all.js'
 import store from '../store.js'
 import { connect } from 'react-redux'
 import container from '../containers/all.js'
-import mappedCats from '../actions/map_categories.js'
 import ValuesView from './values_view.js'
 
 
@@ -49,8 +48,3 @@ const ModalView = React.createClass({
 })
 
 export default connect(container.allState)(ModalView)
-// export default ModalView;
-
-// {this.props.datum.clues.map((datum, i)=>{
-//   return <p>{datum.question}</p>
-// })}
