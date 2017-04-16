@@ -19,7 +19,7 @@ Plan it!
 - polish
 
 
------------Working Through------------
+-----------------Working Through--------------------
 
 - [X] Component: Start Page to Add Name
   - [X] Button to progress to Game Screen/Board
@@ -27,7 +27,7 @@ Plan it!
 
 - [X] Reducer Needs to be created for State
 - [X] Set up API
-- [ ] Populate Correct API Data in their Components
+- [X] Populate Correct API Data in their Components
   - [X] Categories, h3, get's _Title_
   - [X] Each Block/LI item get's a _Value_
 
@@ -44,3 +44,8 @@ Plan it!
 
 - [X] Comp: Name Header Card, takes input from Start Page
 - [ ] Comp: Points Card, adds Points and show's Total Point Value
+
+-----------------Challenges--------------------
+
+**Clicking `<li>` item brings up a MODAL**
+There is a correct Modal for each value. Going through the inspector, you can see that each list item has a hidden Modal with the correct data. The problem here is that when the onClick event occurs, every single Modal pop ups. The user will see the final modal every time which corresponds to the last category with the highest value. 
