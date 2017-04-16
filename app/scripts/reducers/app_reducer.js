@@ -26,7 +26,7 @@ export default function AppReducer (state, action) {
         data: newData
       });
 
-    case "MODAL":
+    case "MODAL_TOGGLE":
       return Object.assign({}, state, {
         modal: !state.modal
       })

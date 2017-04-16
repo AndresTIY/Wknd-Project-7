@@ -8,17 +8,6 @@ import store from '../store.js'
 const CatView = React.createClass({
 
 
-  // modalPopUp: function(e, category){
-  //   console.log(e.target, category);
-  //   store.dispatch({type:"MODAL"})
-  // },
-  //how do we get this function to grab the current category?
-  //also want current value
-  //dom traversal?
-  //if grabbed, dispatch currentCategory and currentValue to global state
-  //modal_view creates a local state based on currentCategory
-
-
   render: function(){
 
     let showClass = "show-content"
@@ -35,6 +24,7 @@ const CatView = React.createClass({
               <div className="cat" key={index}>
                 <h3>{datum.title}</h3>
                   <ValuesView
+                  category = {datum.title}
                   datum={datum} />
               </div>
             )

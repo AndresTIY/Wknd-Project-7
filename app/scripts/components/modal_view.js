@@ -8,40 +8,31 @@ import ValuesView from './values_view.js'
 
 
 const ModalView = React.createClass({
-  //
-  // getInitialState: function(){
-  //
-  //   return {
-  //     getData: this.props.category,
-  //
-  //   }
-  // },
-
 
   pass: function(){
     console.log('pass clicked');
-    store.dispatch({type:"MODAL"})
+    store.dispatch({type:"MODAL_TOGGLE"})
   },
   submit: function(){
     console.log('submit clicked');
-    store.dispatch({type:"MODAL"})
+    store.dispatch({type:"MODAL_TOGGLE"})
 
   },
-  // questions: function(){
-  //   this.props.datum.clues.slice(0,5).map((datum, i)=>{
-  //     return datum.question
-  //   })
-  //
-  // },
-  //this is doing nothing so far
 
   render: function(){
-
+    let question = this.props.question
+    let category = this.props.category
+    let answer = this.props.answer
+    let val = this.props.value
 
     return (
       <div>
         <div className="modal">
-          <p>question goes here</p>
+          <p>{category}</p>
+          <p>{question}</p>
+          <p>{answer}</p>
+          <p>{val}</p>
+
           <input
           type="text"
           placeholder="type in your answer">
@@ -57,7 +48,6 @@ const ModalView = React.createClass({
 
 })
 
-// export default PromptView;
 export default connect(container.allState)(ModalView)
 // export default ModalView;
 
