@@ -49,4 +49,4 @@ Plan it!
 
 **Clicking `<li>` item brings up a MODAL**
 
-There is a correct Modal for each value. Going through the inspector, you can see that each list item has a hidden Modal with the correct data. The problem here is that when the onClick event occurs, every single Modal pop ups. The user will see the final modal every time which corresponds to the last category with the highest value.
+There is a correct Modal for each value. Going through the inspector, you can see that each list item has a hidden Modal with the correct data. The problem here is that when the onClick event occurs, every single Modal pop ups. The user will see the final modal every time which corresponds to the last category with the highest value. Tried to give each <ModalView/> an ID, so that if the ID's match, only that specific Modal would show, but could not get that to work properly.

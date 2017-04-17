@@ -26,12 +26,9 @@ const ModalView = React.createClass({
 
     return (
       <div>
-        <div className="modal">
-          <p>{category}</p>
+        <div key={this.props.key} className="modal">
+          <p className="modal-cat">{category}</p>
           <p>{question}</p>
-          <p>{answer}</p>
-          <p>{val}</p>
-
           <input
           type="text"
           placeholder="type in your answer">

@@ -25,6 +25,7 @@ const ValuesView = React.createClass({
             return <div>
                     <div className={hideClass}>
                       <ModalView
+                      key = {i}
                       category = {this.props.category}
                       question = {data.question}
                       answer = {data.answer}
@@ -36,6 +37,7 @@ const ValuesView = React.createClass({
           return   <div>
                     <div className={hideClass}>
                       <ModalView
+                      key = {i}
                       category = {this.props.category}
                       question = {data.question}
                       answer = {data.answer}
